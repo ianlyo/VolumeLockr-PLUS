@@ -433,11 +433,9 @@ fun LeftPane(
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 Image(
-                    painter = painterResource(R.mipmap.ic_volumelockr),
+                    painter = painterResource(R.drawable.ic_tv_app_icon),
                     contentDescription = stringResource(R.string.app_name),
-                    modifier = Modifier
-                        .size(52.dp)
-                        .clip(RoundedCornerShape(14.dp))
+                    modifier = Modifier.size(52.dp)
                 )
                 Column {
                     Text(
