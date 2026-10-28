@@ -28,3 +28,7 @@ captures/
 /原作
 /原作者
 /icon_2
+
+# Helper scripts
+*.py
+
