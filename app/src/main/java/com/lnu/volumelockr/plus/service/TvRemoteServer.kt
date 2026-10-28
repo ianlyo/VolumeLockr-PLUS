@@ -230,7 +230,7 @@ class TvRemoteServer(private val context: Context, private val serviceScope: Cor
                 context.sendBroadcast(intent)
                 sendResponse(output, 200, "OK")
             } else if (requestLine.startsWith("GET /launch_app")) {
-                val launchIntent = Intent(context, com.lnu.volumelockr.plus.ui.MainActivity::class.java).apply {
+                val launchIntent = Intent(context, com.lnu.volumelockr.plus.ui.TvMainActivity::class.java).apply {
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
                 }
                 

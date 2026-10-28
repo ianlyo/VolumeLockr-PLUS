@@ -24,4 +24,13 @@
     <string name="unlock_all">Разблокировать всё</string>
     <string name="aboutLibraries_description_text">VolumeLockr PLUS</string>
 
+    <string name="tv_menu_hint">Нажмите кнопку блокировки или клавишу MENU на пульте для блокировки громкости. Разблокировка возможна только с телефона.</string>
+    <string name="tv_locked_all_toast">Все уровни громкости заблокированы. Разблокируйте с телефона.</string>
+    <string name="tv_locked_all_btn">Все заблокировано</string>
+    <string name="volume_streams_header">Аудиопотоки</string>
+    <string name="remote_guide_title">Инструкция к пульту</string>
+    <string name="guide_menu_key">Нажмите MENU для блокировки всех уровней</string>
+    <string name="guide_arrows">Используйте стрелки для регулировки</string>
+    <string name="guide_phone_unlock">Разблокировка выполняется только с телефона</string>
+    <string name="quick_actions_header">Быстрые действия</string>
 </resources>

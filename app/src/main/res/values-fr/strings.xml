@@ -28,4 +28,13 @@
     <string name="password_protected_summary">Require password or biometric to open the app</string>
     <string name="change_password_summary">Définir ou mettre à jour le mot de passe de déverrouillage</string>
 
+    <string name="tv_menu_hint">Appuyez sur le bouton Verrouiller ou sur la touche MENU de la télécommande pour verrouiller le volume. Le déverrouillage se fait uniquement depuis le téléphone.</string>
+    <string name="tv_locked_all_toast">Tous les volumes sont verrouillés. Déverrouillez depuis votre téléphone.</string>
+    <string name="tv_locked_all_btn">Tout verrouillé</string>
+    <string name="volume_streams_header">Flux audio</string>
+    <string name="remote_guide_title">Guide de la télécommande</string>
+    <string name="guide_menu_key">Appuyez sur MENU pour tout verrouiller</string>
+    <string name="guide_arrows">Touches gauche et droite pour régler le volume</string>
+    <string name="guide_phone_unlock">Le déverrouillage se fait depuis le téléphone</string>
+    <string name="quick_actions_header">Actions rapides</string>
 </resources>

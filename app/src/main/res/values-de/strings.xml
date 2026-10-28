@@ -31,4 +31,13 @@
 
     <string name="aboutLibraries_description_text">VolumeLockr PLUS</string>
 
+    <string name="tv_menu_hint">Drücken Sie die Sperrtaste oder die MENU-Taste auf der Fernbedienung, um die Lautstärke zu sperren. Das Entsperren ist nur über das Smartphone möglich.</string>
+    <string name="tv_locked_all_toast">Alle Lautstärken gesperrt. Bitte mit dem Smartphone entsperren.</string>
+    <string name="tv_locked_all_btn">Alles gesperrt</string>
+    <string name="volume_streams_header">Audioströme</string>
+    <string name="remote_guide_title">Fernbedienungsanleitung</string>
+    <string name="guide_menu_key">MENU-Taste drücken um alles zu sperren</string>
+    <string name="guide_arrows">Mit Links und Rechts Lautstärke anpassen</string>
+    <string name="guide_phone_unlock">Entsperren muss über Smartphone erfolgen</string>
+    <string name="quick_actions_header">Schnellaktionen</string>
 </resources>

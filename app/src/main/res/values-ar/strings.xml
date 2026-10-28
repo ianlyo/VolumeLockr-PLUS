@@ -30,4 +30,13 @@
     <string name="change_password_summary">اضبط أو حدّث كلمة السر الخاصة بإلغاء القفل</string>
     
     <string name="aboutLibraries_description_text">VolumeLockr PLUS</string>
+    <string name="tv_menu_hint">اضغط على زر القفل أو مفتاح MENU على جهاز التحكم عن بعد لقفل مستوى الصوت. إلغاء القفل ممكن فقط من هاتفك.</string>
+    <string name="tv_locked_all_toast">تم قفل جميع مستويات الصوت. قم بإلغاء القفل من هاتفك.</string>
+    <string name="tv_locked_all_btn">الكل مقفل</string>
+    <string name="volume_streams_header">قنوات الصوت</string>
+    <string name="remote_guide_title">دليل جهاز التحكم</string>
+    <string name="guide_menu_key">اضغط على زر القائمة لقفل الصوت</string>
+    <string name="guide_arrows">استخدم الأسهم للضبط</string>
+    <string name="guide_phone_unlock">إلغاء القفل يتم من تطبيق الهاتف</string>
+    <string name="quick_actions_header">الإجراءات السريعة</string>
 </resources>

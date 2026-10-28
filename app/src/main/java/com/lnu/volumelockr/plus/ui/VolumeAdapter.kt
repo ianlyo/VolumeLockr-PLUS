@@ -22,7 +22,8 @@ class VolumeAdapter(
     private var mVolumeList: List<Volume>,
     private var mService: VolumeService?,
     private var mContext: Context,
-    var onLockStateChanged: (() -> Unit)? = null
+    var onLockStateChanged: (() -> Unit)? = null,
+    private val tvMode: Boolean = false
 ) :
     RecyclerView.Adapter<VolumeAdapter.ViewHolder>() {
 
@@ -114,7 +115,7 @@ class VolumeAdapter(
         val isTv = uiModeManager.currentModeType == android.content.res.Configuration.UI_MODE_TYPE_TELEVISION
         val hideUnlock = PreferenceManager.getDefaultSharedPreferences(mContext).getBoolean("hide_tv_unlock_ui", true)
         
-        if (isTv && hideUnlock) {
+        if (tvMode || (isTv && hideUnlock)) {
             holder.binding.lockButton.visibility = android.view.View.GONE
         } else {
             holder.binding.lockButton.visibility = android.view.View.VISIBLE

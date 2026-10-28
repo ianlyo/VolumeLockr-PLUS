@@ -31,4 +31,13 @@
 
     <string name="aboutLibraries_description_text">VolumeLockr PLUS</string>
 
+    <string name="tv_menu_hint">Presione el botón Bloquear o la tecla MENU del control remoto para bloquear el volumen. Desbloquear solo es posible desde el teléfono.</string>
+    <string name="tv_locked_all_toast">Todos los volúmenes bloqueados. Desbloquee desde su teléfono.</string>
+    <string name="tv_locked_all_btn">Todo bloqueado</string>
+    <string name="volume_streams_header">Canales de audio</string>
+    <string name="remote_guide_title">Guía del control remoto</string>
+    <string name="guide_menu_key">Presione MENU para bloquear todo</string>
+    <string name="guide_arrows">Use flechas izquierda y derecha para ajustar volumen</string>
+    <string name="guide_phone_unlock">El desbloqueo debe realizarse desde el teléfono</string>
+    <string name="quick_actions_header">Acciones rápidas</string>
 </resources>

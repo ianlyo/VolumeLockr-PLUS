@@ -26,6 +26,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        val uiMode = getSystemService(android.content.Context.UI_MODE_SERVICE) as android.app.UiModeManager
+        if (uiMode.currentModeType == android.content.res.Configuration.UI_MODE_TYPE_TELEVISION) {
+            startActivity(android.content.Intent(this, TvMainActivity::class.java))
+            finish()
+            return
+        }
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupNavigation()
@@ -78,7 +84,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        binding.toolbar.dismissPopupMenus()
+        if (::binding.isInitialized) binding.toolbar.dismissPopupMenus()
         activeDndDialog?.dismiss()
         activeDndDialog = null
         themeAnimator?.cancel()

@@ -45,3 +45,27 @@ cd VolumeLockr-PLUS
 ```bash
 adb install ./app/build/outputs/apk/debug/app-debug.apk
 ```
+
+---
+
+## Android TV 遠端配對與模擬器測試說明
+
+### 實體裝置連線（真實手機與電視）
+1. 確保手機與 Android TV 連接在**同一個 Wi-Fi 區域網路**。
+2. 電視端開啟 VolumeLockr PLUS，畫面上會顯示真實區域網路 IP（例如 `192.168.1.100`）與 6 位數配對 PIN 碼。
+3. 手機端切換至「TV Remote」分頁，輸入該 IP 或掃描 QR Code，點擊 **Connect** 並輸入 PIN 碼即可完成配對。
+
+### 雙模擬器環境測試（手機模擬器 ⟷ 電視模擬器）
+Android 模擬器（AVD）皆在獨立的虛擬 NAT 路由器後方運行，每個模擬器的本機 IP 預設皆為 `10.0.2.15`，無法直接透過該 IP 互通。請依照下列步驟進行連線：
+
+1. **設定宿主機連接埠轉發 (Port Forwarding)**  
+   在電腦終端機執行下列指令，將宿主機的 `8080` 端口轉發至電視模擬器（以 `emulator-5554` 為例）：
+   ```bash
+   adb -s emulator-5554 forward tcp:8080 tcp:8080
+   ```
+2. **手機端連線設定**  
+   在手機模擬器的「TV Remote」頁面中：
+   - **TV IP Address** 請填入 **`10.0.2.2`**（此位址在模擬器中代表電腦宿主機）。
+   - 點擊 **Connect**，在彈出的對話框中輸入電視模擬器當前顯示的 6 位數 PIN 碼。
+3. 配對成功後即可在手機模擬器上即時控制電視模擬器的音量與鎖定狀態。
+

@@ -31,4 +31,13 @@
 
     <string name="aboutLibraries_description_text">VolumeLockr PLUS</string>
 
+    <string name="tv_menu_hint">Premi il pulsante Blocca o il tasto MENU sul telecomando per bloccare il volume. Lo sblocco è possibile solo dallo smartphone.</string>
+    <string name="tv_locked_all_toast">Tutti i volumi sono bloccati. Sblocca dal tuo telefono.</string>
+    <string name="tv_locked_all_btn">Tutto bloccato</string>
+    <string name="volume_streams_header">Flussi audio</string>
+    <string name="remote_guide_title">Guida telecomando</string>
+    <string name="guide_menu_key">Premi MENU per bloccare tutto</string>
+    <string name="guide_arrows">Usa frecce sinistra e destra per regolare volume</string>
+    <string name="guide_phone_unlock">Lo sblocco va fatto dallo smartphone</string>
+    <string name="quick_actions_header">Azioni rapide</string>
 </resources>

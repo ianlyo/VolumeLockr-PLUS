@@ -45,3 +45,27 @@ cd VolumeLockr-PLUS
 ```bash
 adb install ./app/build/outputs/apk/debug/app-debug.apk
 ```
+
+---
+
+## Android TV Remote Pairing & Emulator Testing
+
+### Real Devices (Physical Phone & TV)
+1. Ensure both devices are connected to the **same Wi-Fi local network**.
+2. Open VolumeLockr PLUS on your TV; it will display its LAN IP address (e.g., `192.168.1.100`) and a 6-digit pairing PIN.
+3. Open the "TV Remote" tab on your phone, enter the IP (or scan the QR Code), click **Connect**, and enter the PIN to pair.
+
+### Emulator Testing (Phone Emulator ⟷ TV Emulator)
+Each Android Emulator (AVD) runs inside an isolated virtual NAT network, where its internal IP is always `10.0.2.15`. They cannot communicate with each other directly via this address. Follow these steps to connect them:
+
+1. **Set Up Host Port Forwarding**  
+   Run the following command on your host machine to forward host port `8080` to the TV emulator (e.g., `emulator-5554`):
+   ```bash
+   adb -s emulator-5554 forward tcp:8080 tcp:8080
+   ```
+2. **Configure Phone Emulator**  
+   On your phone emulator's "TV Remote" page:
+   - Enter **`10.0.2.2`** in the **TV IP Address** field (`10.0.2.2` is the special alias for the host machine).
+   - Click **Connect** and enter the 6-digit PIN currently displayed on the TV emulator.
+3. Once paired, you can control the TV emulator's volume and lock states directly from your phone emulator.
+
