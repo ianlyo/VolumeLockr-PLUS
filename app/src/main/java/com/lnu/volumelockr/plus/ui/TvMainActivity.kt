@@ -17,6 +17,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -431,20 +432,13 @@ fun LeftPane(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                Box(
+                Image(
+                    painter = painterResource(R.mipmap.ic_volumelockr),
+                    contentDescription = stringResource(R.string.app_name),
                     modifier = Modifier
                         .size(52.dp)
                         .clip(RoundedCornerShape(14.dp))
-                        .background(Color(0xFF43345E)),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        painter = painterResource(R.drawable.ic_volumelockr_foreground),
-                        contentDescription = null,
-                        tint = Color(0xFFE9DDFF),
-                        modifier = Modifier.size(36.dp)
-                    )
-                }
+                )
                 Column {
                     Text(
                         text = stringResource(R.string.app_name),
